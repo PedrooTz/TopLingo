@@ -21,6 +21,17 @@ header{
     padding: 56px;
     
 }
+button{
+    position: absolute;
+    display: flex;
+    padding: 16px;
+    right: 20px;
+    height: 30px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
 main{   
     height: 100vh;
     display: grid;
@@ -31,20 +42,29 @@ main{
     height: 56px;
 }
 .text2{
-    width: 400px;
     height: 56px;
     padding-bottom: 64px;  
 }
 .text1 input{
-    padding: 10px;
+    background-image: url(./img/image\ 2.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    padding: 16px;
     width: 867px;
+    outline: none;
     border-top-style: none;
     border-left-style: none;
     border-right-style: none;  
 }
 .text2 input{
-    padding: 10px;
+    background-image: url(./img/image\ 3.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    padding: 16px;
     width: 867px;
+    outline: none;
     border-top-style: none;
     border-left-style: none;
     border-right-style: none;  
