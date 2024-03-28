@@ -1,19 +1,21 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
 }
-.listra{
+
+.listra {
     background-color: #5B0B9B;
     height: 100%;
     width: 70px;
     position: absolute;
 }
-body{
+
+body {
     height: 100vh;
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
     background-color: white;
 }
 #body.tema-escuro{
@@ -40,13 +42,14 @@ body{
     width: 1048px;
     cursor: auto;
 }
-header{
+
+header {
     padding: 8px;
     align-items: center;
     padding: 56px;
-    
 }
-button{
+
+button {
     position: absolute;
     display: flex;
     padding: 16px;
@@ -57,7 +60,7 @@ button{
     background-color: transparent;
 }
 
-main{   
+main {
     height: 100vh;
     display: grid;
     justify-content: center;
@@ -74,9 +77,17 @@ main{
     padding-top: 64px;
     height: 56px;
 }
-.text2{
-    height: 56px;
-    padding-bottom: 64px;  
+
+.botaoOuvir {
+    background-image: url(./img/microfone.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    justify-content: center;
+    background-color: transparent;
+    align-items: center;
+    color: aliceblue;
+    border: none;
+    border-radius: 10px;
 }
 .text1 input{  
     background: transparent;
@@ -100,26 +111,33 @@ main{
     border-color: black;  
     color: #5B0B9B;
 }
-h1{
+
+h1 {
     display: flex;
     justify-content: center;
-    color:#5B0B9B;
+    color: #5B0B9B;
     font-size: 64px;
     padding: 24px;
 }
-footer{
+
+footer {
     display: flex;
     color: #5B0B9B;
     justify-content: center;
     padding: 36px;
 }
 
-/* ********************************* */
-/* Responsividade IPAD Mini */
+
 /* ********************************* */
 
-@media(max-width:768px){
-    *{
+
+/* Responsividade IPAD Mini */
+
+
+/* ********************************* */
+
+@media(max-width:768px) {
+    * {
         padding: 0;
         margin: 0;
         box-sizing: border-box;
@@ -192,16 +210,63 @@ footer{
         height: 100vh;
         width: 100vw;
     }
-    header{
-        align-items: center;
-        display: flex;
+    main {
+        height: 60%;
+        width: 100%;
     }
-    .text1{
+    .text1 {
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .text1 input{
+    .text1 input {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+    }
+    .text2 input {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+    }
+}
+
+
+/* ********************************* */
+
+
+/* Responsividade IPHONE SE */
+
+
+/* ********************************* */
+
+@media(max-width:375px) {
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .listra {
+        width: 40px;
+    }
+    body {
+        height: 100vh;
+        width: 100vw;
+    }
+    header {
+        align-items: center;
+        display: flex;
+    }
+    .text1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .text1 input {
         position: relative;
         display: flex;
         justify-content: center;
