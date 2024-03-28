@@ -1,31 +1,35 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
 }
-.listra{
+
+.listra {
     background-color: #5B0B9B;
     height: 100%;
     width: 70px;
     position: absolute;
 }
-body{
+
+body {
     height: 100vh;
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
     background-color: white;
 }
-.dark-mode{
+
+.dark-mode {
     background-color: black;
 }
-header{
+
+header {
     padding: 8px;
     align-items: center;
     padding: 56px;
-    
 }
-button{
+
+button {
     position: absolute;
     display: flex;
     padding: 16px;
@@ -36,20 +40,47 @@ button{
     background-color: transparent;
 }
 
-main{   
+main {
     height: 100vh;
     display: grid;
     justify-content: center;
 }
-.text1{
+
+.text1 {
     padding-top: 64px;
     height: 56px;
 }
-.text2{
-    height: 56px;
-    padding-bottom: 64px;  
+
+.botaoOuvir {
+    background-image: url(./img/microfone.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    justify-content: center;
+    background-color: transparent;
+    align-items: center;
+    color: aliceblue;
+    border: none;
+    border-radius: 10px;
 }
-.text1 input{
+
+.botaoFalar {
+    background-image: url(./img/autoFalante.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    justify-content: center;
+    background-color: transparent;
+    align-items: center;
+    color: aliceblue;
+    border: none;
+    border-radius: 10px;
+}
+
+.text2 {
+    height: 56px;
+    padding-bottom: 64px;
+}
+
+.text1 textarea {
     background-color: transparent;
     background-image: url(./img/image\ 2.png);
     background-repeat: no-repeat;
@@ -60,9 +91,10 @@ main{
     outline: none;
     border-top-style: none;
     border-left-style: none;
-    border-right-style: none;  
+    border-right-style: none;
 }
-.text2 input{
+
+.text2 textarea {
     background-color: transparent;
     background-image: url(./img/image\ 3.png);
     background-repeat: no-repeat;
@@ -73,98 +105,107 @@ main{
     outline: none;
     border-top-style: none;
     border-left-style: none;
-    border-right-style: none;  
+    border-right-style: none;
 }
-h1{
+
+h1 {
     display: flex;
     justify-content: center;
-    color:#5B0B9B;
+    color: #5B0B9B;
     font-size: 64px;
     padding: 24px;
 }
-footer{
+
+footer {
     display: flex;
     color: #5B0B9B;
     justify-content: center;
     padding: 36px;
 }
 
+
 /* ********************************* */
+
+
 /* Responsividade IPAD Mini */
+
+
 /* ********************************* */
 
-@media(max-width:768px){
-    *{
+@media(max-width:768px) {
+    * {
         padding: 0;
         margin: 0;
         box-sizing: border-box;
     }
-    body{
-      height: 100vh;
-      width: 100vw;
-  }
-  
-  main{
-    height: 60%;
-    width: 100%;
-  }
-  .text1{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-  }
-  .text1 input{
-      position: relative;
-      display: flex;    
-      justify-content: center;
-      align-items: center;
-      width: 500px;
-  }
-  .text2 input{
-    position: relative;
-    display: flex;    
-    justify-content: center;
-    align-items: center;
-    width: 500px;
-  }
-}
-
-
-/* ********************************* */
-/* Responsividade IPHONE SE */
-/* ********************************* */
-
-
-@media(max-width:375px){
-    *{
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-    }
-    .listra{
-        width: 40px;
-    }   
-    body{
+    body {
         height: 100vh;
         width: 100vw;
     }
-    header{
-        align-items: center;
-        display: flex;
+    main {
+        height: 60%;
+        width: 100%;
     }
-    .text1{
+    .text1 {
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .text1 input{
+    .text1 input {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+    }
+    .text2 input {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+    }
+}
+
+
+/* ********************************* */
+
+
+/* Responsividade IPHONE SE */
+
+
+/* ********************************* */
+
+@media(max-width:375px) {
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .listra {
+        width: 40px;
+    }
+    body {
+        height: 100vh;
+        width: 100vw;
+    }
+    header {
+        align-items: center;
+        display: flex;
+    }
+    .text1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .text1 input {
         position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
         width: 280px;
     }
-    .text2 input{
+    .text2 input {
         position: relative;
         display: flex;
         justify-content: center;

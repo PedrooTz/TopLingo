@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,17 +13,18 @@
     <script defer src="./script.js"></script>
     <title>ACME - Filmes</title>
 </head>
-<body>  
+
+<body>
     <div class="listra">
     </div>
     <button class="lua">
         <div class="modo-botao">
             <button onclick="toggleDarkMode()" id="button-modo"><img src="./img/lua 1.png" alt=""></button>
-        </div>  
+    </div>
     </button>
     <header>
         <div class="conteudo">
-        <h1>TopLingo </h1>
+            <h1>TopLingo </h1>
         </div>
     </header>
     <main>
@@ -31,14 +33,17 @@
             <select class="selectTo"></select>
         </div>
         <div class="text1">
-            <input id="textareaFrom" rows="8" placeholder="Digitar texto"></input>
+            <textarea name="textareaFrom" placeholder="Digitar texto" id="textareaFrom" cols="1" rows="1"></textarea>
+            <button class="botaoOuvir" id="listener"></button>
+            <!-- <button class="botao" id="falar"></button> -->
         </div>
         <div class="text2">
-            <input id="textareaTo" rows="8" placeholder="Tradução" disabled></input>
+            <textarea name="botaoFalar" placeholder="Digitar texto" id="textareaTo" cols="1" rows="1"></textarea>
         </div>
     </main>
     <footer>
-       <p> 🚀  Pedro Pedraga | Eduardo Gonçalves   🚀</p>
+        <p> 🚀 Pedro Pedraga | Eduardo Gonçalves 🚀</p>
     </footer>
 </body>
+
 </html>

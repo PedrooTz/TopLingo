@@ -1,6 +1,32 @@
+// API TRANSLATION
 const textareaFrom = document.querySelector("#textareaFrom");
 const textareaTo = document.querySelector("#textareaTo");
 const selects = document.querySelectorAll("select");
+
+// API VOICE IN
+listener.addEventListener('click', function() {
+    var speech = true
+    window.SpeechRecognition = window.webkitSpeechRecognition
+    const recognition = new SpeechRecognition()
+    recognition.interimResults = true
+
+    recognition.addEventListener('result', e => {
+        const transcript = Array.from(e.results)
+            .map(result => result[0])
+            .map(result => result.transcript)
+
+        textareaFrom.innerHTML = transcript;
+    })
+
+    if (speech == true) {
+        recognition.start();
+        console.log("True")
+        console.log(textareaFrom.value)
+    } else {
+        console.log("False")
+        console.log(textareaFrom.value)
+    }
+})
 
 const countries = {
     "en-GB": "Inglês",
@@ -10,6 +36,7 @@ const countries = {
     "pt-BR": "Português",
 };
 
+// API TRANSLATION
 selects.forEach((tag) => {
     for (let country in countries) {
         let selected;
@@ -40,3 +67,5 @@ function loadTranslation() {
             textareaTo.value = data.responseData.translatedText;
         });
 }
+
+// API VOICE IN
