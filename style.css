@@ -89,7 +89,7 @@ main {
     border: none;
     border-radius: 10px;
 }
-.text1 input{  
+.text1 textarea{  
     background: transparent;
     padding: 16px;
     width: 867px;
@@ -99,7 +99,7 @@ main {
     border-right-style: none; 
 
 }
-.text2 input{
+.text2 textarea{
     background: transparent;
     background-size: contain;
     padding: 16px;
