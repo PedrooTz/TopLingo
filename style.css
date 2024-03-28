@@ -180,7 +180,9 @@ footer{
         box-sizing: border-box;
     }
     .listra{
-        height: 0;
+        position: absolute;
+        height: 30px;
+        width: 100%;
     }   
     .button-theme img{
         width: 10px;
@@ -207,10 +209,7 @@ footer{
         width: 280px;
     }
     .text2 input{
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+       
         width: 280px;
     }
     
