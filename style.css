@@ -21,6 +21,10 @@ body {
 #body.tema-escuro{
     background-color: #000;
 }
+#body.tema-escuro .mic img{
+    background-color: #5B0B9B;
+    border-radius: 24px;
+}
 #body.tema-escuro .selectFrom{
     background-color: transparent;
     color: #ccc;
@@ -30,18 +34,37 @@ body {
     color: #ccc;
 }
 .seta img{
-    height: 50px;
-    width: 50px;
+    height: 60px;
+    width: 60px;
     cursor: pointer;
+}
+.button-img{
+    display: flex;
+    flex-direction: row;
 }
 .seta{
     display: flex;
     justify-content: flex-end;
     position: relative;
+    width: 600px;
+    cursor: auto;
+    padding-right: 160px;
+  
+}
+.mic img{
     height: 50px;
-    width: 1048px;
+    width: 50px;
+    cursor: pointer;
+    
+}
+.mic{
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    width: 600px;
     cursor: auto;
 }
+
 
 header {
     padding: 8px;
@@ -64,6 +87,7 @@ main {
     height: 100vh;
     display: grid;
     justify-content: center;
+    padding-left: 200px;
 }
 
 .img1{
@@ -79,7 +103,6 @@ main {
 }
 
 .botaoOuvir {
-    background-image: url(./img/microfone.png);
     background-size: contain;
     background-repeat: no-repeat;
     justify-content: center;
@@ -88,6 +111,14 @@ main {
     color: aliceblue;
     border: none;
     border-radius: 10px;
+}
+.mic-img{
+}
+.mic-img img{
+    justify-content: flex-start;
+    height: 45px;
+    width: 45px;
+
 }
 .text1 textarea{  
     background: transparent;
@@ -108,7 +139,6 @@ main {
     border-top-style: none;
     border-left-style: none;
     border-right-style: none;
-    border-color: black;  
     color: #5B0B9B;
 }
 
